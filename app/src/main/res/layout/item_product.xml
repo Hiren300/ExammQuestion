@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="127dp"
+        android:layout_height="119dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/product1" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comic Title"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:textColor="#eb4034"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"/>
+
+        <Button
+            android:id="@+id/btnCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/black"
+            android:text="Add to Cart"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
